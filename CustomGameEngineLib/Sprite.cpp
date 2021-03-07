@@ -92,6 +92,11 @@ void Sprite::Draw(Matrix4 mat, Color col, Blendmode bMode)
 	DrawQuad();
 }
 
+void Sprite::SetShader(Shader* shader)
+{
+	m_Shader = shader;
+}
+
 void Sprite::DrawQuad()
 {
 	glBindVertexArray(VAO);

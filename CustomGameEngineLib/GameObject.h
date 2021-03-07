@@ -8,13 +8,14 @@ class Collider;
 class GameObject
 {
 private:
-	Sprite* m_Sprite;
+	//Sprite* m_Sprite;
 	Vector3 m_Position;
 	Vector3 m_Scale;
 	float m_Rotation;
 	Color m_Color;
 	Blendmode m_Blend;
 	bool enabled;
+	bool drawEnabled;
 	std::list<Behavior*> attachedBehaviors;
 	std::list <Behavior*>::iterator it;
 	Matrix4 m_GameObjectMatrix;
@@ -23,6 +24,9 @@ private:
 	Collider* collider;
 	bool colliderEnabled;
 public:
+
+	Sprite* m_Sprite;
+
 	GameObject();
 	~GameObject();
 	GameObject(Sprite* sprite);
@@ -47,6 +51,9 @@ public:
 	void SetEnable(bool e);
 	bool GetEnabled();
 
+	void SetDrawEnable(bool e);
+	bool GetDrawEnabled();
+
 	void SetParent(GameObject* par);
 	Matrix4 GetMatrix();
 
@@ -58,6 +65,7 @@ public:
 
 	virtual void Update(float deltaTime, Input& inputData);
 	virtual void Draw();
+
 
 	Matrix4 translateMatrix;
 	Matrix4 rotateMatrix;

@@ -1,2 +1,0 @@
-D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\x64\Debug\CustomGameEngineLib.pdb
-D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\x64\Debug\CustomGameEngineLib.pdb

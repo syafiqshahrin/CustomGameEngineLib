@@ -54,6 +54,7 @@ D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\M
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
   Input.cpp
+  Matrix.cpp
   NoiseAffector.cpp
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
@@ -77,17 +78,21 @@ D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\V
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
   Shader.cpp
+  Generating Code...
+  Compiling...
   SizeAffector.cpp
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
-  Generating Code...
-  Compiling...
   SpeedAffector.cpp
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
 D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
   Sprite.cpp
-D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Sprite.cpp(153,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Sprite.cpp(153,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Sprite.cpp(158,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Sprite.cpp(158,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Vector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.cpp(26,24): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.cpp(65,24): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.cpp(164,24): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   Generating Code...
 fmodex64_vc.lib(fmodex64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored
   CustomGameEngineLib.vcxproj -> D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\x64\Debug\CustomGameEngineLib.lib

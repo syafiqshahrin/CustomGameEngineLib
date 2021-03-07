@@ -34,9 +34,12 @@ public:
 
 	void Draw(Matrix4 mat, Color col = Color::WHITE , Blendmode bMode = Alpha);
 	Vector2 m_Dimensions;
+	void SetShader(Shader* shader);
+
+	Shader* m_Shader;
+
 private:
 	GLuint m_TextureID;
-	Shader* m_Shader;
 	Matrix4 m_gOthorMatrix;
 	Matrix4 m_gViewMatrix;
 	Matrix4 m_spriteMatrix;

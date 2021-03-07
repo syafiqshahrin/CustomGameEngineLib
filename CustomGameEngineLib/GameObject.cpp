@@ -17,6 +17,7 @@ GameObject::GameObject()
 	parent = nullptr;
 	m_Sprite = nullptr;
 	enabled = true;
+	drawEnabled = true;
 	collider = nullptr;
 	colliderEnabled = false;
 	UpdatePosMatrix();
@@ -38,6 +39,7 @@ GameObject::GameObject(Sprite* sprite)
 	m_Blend = Blendmode::Alpha;
 	parent = nullptr;
 	enabled = true;
+	drawEnabled = true;
 	collider = nullptr;
 	colliderEnabled = false;
 	UpdatePosMatrix();
@@ -53,6 +55,7 @@ GameObject::GameObject(Sprite* sprite, Vector3 pos)
 	m_Blend = Blendmode::Alpha;
 	parent = nullptr;
 	enabled = true;
+	drawEnabled = true;
 	collider = nullptr;
 	colliderEnabled = false;
 	UpdatePosMatrix();
@@ -68,6 +71,7 @@ GameObject::GameObject(Sprite* sprite, Vector3 pos, GameObject* par)
 	m_Blend = Blendmode::Alpha;
 	parent = par;
 	enabled = true;
+	drawEnabled = true;
 	collider = nullptr;
 	colliderEnabled = false;
 	UpdatePosMatrix();
@@ -140,6 +144,16 @@ bool GameObject::GetEnabled()
 	return enabled;
 }
 
+void GameObject::SetDrawEnable(bool e)
+{
+	drawEnabled = e;
+}
+
+bool GameObject::GetDrawEnabled()
+{
+	return drawEnabled;
+}
+
 
 
 void GameObject::SetParent(GameObject* par)
@@ -204,7 +218,7 @@ void GameObject::Update(float deltaTime, Input& inputData)
 
 void GameObject::Draw()
 {
-	if (enabled)
+	if (enabled && drawEnabled)
 	{
 		if (!attachedBehaviors.empty())
 		{
