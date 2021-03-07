@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Audio.h" />
+    <ClInclude Include="Behavior.h" />
+    <ClInclude Include="CircleEmitterShape.h" />
+    <ClInclude Include="CircleRingEmitterShape.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="ColliderManager.h" />
+    <ClInclude Include="ColorAffector.h" />
+    <ClInclude Include="CoreHeaders.h" />
+    <ClInclude Include="Curves.h" />
+    <ClInclude Include="EmitterShape.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GravityAffector.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="NoiseAffector.h" />
+    <ClInclude Include="ParticleAffector.h" />
+    <ClInclude Include="ParticleObject.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="PulsingAffector.h" />
+    <ClInclude Include="QuadEmitterShape.h" />
+    <ClInclude Include="RotationAffector.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="SizeAffector.h" />
+    <ClInclude Include="SpeedAffector.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="Vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Audio.cpp" />
+    <ClCompile Include="Behavior.cpp" />
+    <ClCompile Include="CircleEmitterShape.cpp" />
+    <ClCompile Include="CircleRingEmitterShape.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="ColliderManager.cpp" />
+    <ClCompile Include="ColorAffector.cpp" />
+    <ClCompile Include="Curves.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GravityAffector.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="NoiseAffector.cpp" />
+    <ClCompile Include="ParticleObject.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="PulsingAffector.cpp" />
+    <ClCompile Include="QuadEmitterShape.cpp" />
+    <ClCompile Include="RotationAffector.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SizeAffector.cpp" />
+    <ClCompile Include="SpeedAffector.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Vector.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{B84B8035-30E4-4F1D-9671-805921219EFE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CustomGameEngineLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\FmodEx\api\lib;D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\glfw-3.3.2.bin.WIN64\lib-vc2019;$(LibraryPath);D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\FmodEx\api\lib;D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\glfw-3.3.2.bin.WIN64\lib-vc2019</LibraryPath>
+    <IncludePath>D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\FmodEx\api\inc;D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\glfw-3.3.2.bin.WIN64\include\GLFW;D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\FmodEx\api\inc;D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\glfw-3.3.2.bin.WIN64\include\GLFW;D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\FmodEx\api\lib;D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\SDK\glfw-3.3.2.bin.WIN64\lib-vc2019</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;fmodex64_vc.lib;%(AdditionalDependencies);glfw3.lib;opengl32.lib;fmodex64_vc.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>;glfw3.lib;opengl32.lib;fmodex64_vc.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

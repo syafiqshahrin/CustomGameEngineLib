@@ -1,0 +1,93 @@
+﻿  Application.cpp
+  Audio.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Audio.cpp(31,64): warning C4474: 'printf' : too many arguments passed for format string
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Audio.cpp(31,64): message : placeholders and their parameters expect 0 variadic arguments, but 2 were provided
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Audio.cpp(63,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Behavior.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(5,12): warning C4099: 'Input': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Input.h(3): message : see declaration of 'Input'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Behavior.h(3,12): warning C4099: 'Input': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(5): message : see declaration of 'Input'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\CoreHeaders.h(18,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\EmitterShape.h(2,14): warning C4099: 'Vector3': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.h(37): message : see declaration of 'Vector3'
+  CircleEmitterShape.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\EmitterShape.h(2,14): warning C4099: 'Vector3': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.h(37): message : see declaration of 'Vector3'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\CircleEmitterShape.cpp(21,26): warning C4305: '*=': truncation from 'double' to 'float'
+  CircleRingEmitterShape.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\EmitterShape.h(2,14): warning C4099: 'Vector3': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.h(37): message : see declaration of 'Vector3'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\CircleRingEmitterShape.cpp(22,26): warning C4305: '*=': truncation from 'double' to 'float'
+  Collider.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(5,12): warning C4099: 'Input': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Input.h(3): message : see declaration of 'Input'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Behavior.h(3,12): warning C4099: 'Input': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(5): message : see declaration of 'Input'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\CoreHeaders.h(18,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\EmitterShape.h(2,14): warning C4099: 'Vector3': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.h(37): message : see declaration of 'Vector3'
+  ColliderManager.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(5,12): warning C4099: 'Input': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Input.h(3): message : see declaration of 'Input'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Behavior.h(3,12): warning C4099: 'Input': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(5): message : see declaration of 'Input'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\CoreHeaders.h(18,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\EmitterShape.h(2,14): warning C4099: 'Vector3': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.h(37): message : see declaration of 'Vector3'
+  ColorAffector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  Curves.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Curves.cpp(5,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Curves.cpp(6,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  GameObject.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  GravityAffector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  Input.cpp
+  NoiseAffector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  ParticleObject.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  ParticleSystem.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\EmitterShape.h(2,14): warning C4099: 'Vector3': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.h(37): message : see declaration of 'Vector3'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Input.h(4,1): warning C4099: 'Input': type name first seen using 'class' now seen using 'struct'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Input.h(3): message : see declaration of 'Input'
+  PulsingAffector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  QuadEmitterShape.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\EmitterShape.h(2,14): warning C4099: 'Vector3': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Vector.h(37): message : see declaration of 'Vector3'
+  RotationAffector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  Shader.cpp
+  SizeAffector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  Generating Code...
+  Compiling...
+  SpeedAffector.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\GameObject.h(6,14): warning C4099: 'Matrix4': type name first seen using 'struct' now seen using 'class'
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Matrix.h(12): message : see declaration of 'Matrix4'
+  Sprite.cpp
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Sprite.cpp(153,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\CustomGameEngineLib\Sprite.cpp(153,26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+fmodex64_vc.lib(fmodex64.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored
+  CustomGameEngineLib.vcxproj -> D:\My Documents\GameDev\Sem 8\Data Com\CustomGameEngineLib\x64\Debug\CustomGameEngineLib.lib
