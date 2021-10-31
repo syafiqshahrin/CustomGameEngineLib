@@ -1,4 +1,4 @@
-#include "CoreHeaders.h"
+ #include "CoreHeaders.h"
 #include "ColliderManager.h"
 
 ColliderManager::ColliderManager()

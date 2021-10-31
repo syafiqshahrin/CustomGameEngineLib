@@ -25,7 +25,7 @@ GameObject::GameObject()
 
 GameObject::~GameObject()
 {
-
+	//destroy all pointer objects created from this gameobject
 	//std::cout << "GameObject destructed" << std::endl;
 }
 
@@ -197,6 +197,16 @@ void GameObject::DisableCollider()
 	colliderEnabled = false;
 }
 
+Collider* GameObject::GetCollider()
+{
+	return collider;
+}
+
+CollisionData GameObject::CheckCollision()
+{
+	return collisionData;
+}
+
 void GameObject::Update(float deltaTime, Input& inputData)
 {
 	if (enabled)
@@ -210,7 +220,7 @@ void GameObject::Update(float deltaTime, Input& inputData)
 		}
 		if (colliderEnabled)
 		{
-			collider->CheckCollision();
+			collisionData = collider->CheckCollision();
 		}
 	}
 
@@ -241,7 +251,7 @@ void GameObject::Draw()
 		}
 		if (m_Sprite != nullptr)
 		{
-			m_Sprite->Draw(m_GameObjectMatrix, m_Color, m_Blend);
+			m_Sprite->Draw(mat, m_Color, m_Blend);
 		}
 	}
 }

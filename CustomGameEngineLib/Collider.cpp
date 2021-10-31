@@ -17,11 +17,22 @@ void Collider::CalculateRadius()
 	}
 }
 
+void Collider::SetRadius(float r)
+{
+	radius = r;
+}
+
+void Collider::SetIsTrigger(bool s)
+{
+	isTrigger = s;
+}
+
 Collider::Collider(GameObject* g)
 {
 	gameObject = g;
 	InitialiseCollider();
 	ColliderManager::AddCollider(this);
+	isTrigger = false;
 	
 }
 
@@ -36,8 +47,13 @@ void Collider::InitialiseCollider()
 	CalculateRadius();
 }
 
-void Collider::CheckCollision()
+CollisionData Collider::CheckCollision()
 {
+	CollisionData colData;
+	
+	bool hit = false;
+	colData.hit = hit;
+	colData.gameObjectHit = nullptr;
 	Vector3 currentPos = gameObject->GetPosition();
 	for (std::list <Collider*>::iterator it = ColliderManager::instance->ActiveColliders.begin();
 		it != ColliderManager::instance->ActiveColliders.end(); it++)
@@ -49,7 +65,6 @@ void Collider::CheckCollision()
 		}
 		if (!((*it)->gameObject->colliderEnabled))
 		{
-
 			continue;
 		}
 		Vector3 curColliderPos = (*it)->gameObject->GetPosition();
@@ -57,16 +72,23 @@ void Collider::CheckCollision()
 		Vector3 distanceVec = curColliderPos - currentPos;
 		float distanceSqr = Vector3::lengthSquared(distanceVec);
 		float safeRadius = (radius + cureColliderRad) * (radius + cureColliderRad);
-		
+		//if(!isTrigger)
 		if (distanceSqr < safeRadius)
 		{
-			gameObject->SetPosition(m_PrevPosition);
+			hit = true;
+			colData.hit = hit;
+			colData.gameObjectHit = (*it)->gameObject;
+			if (!isTrigger)
+			{
+				gameObject->SetPosition(m_PrevPosition);
+			}
+			
 		}
 		
 	}
-	ColliderManager::instance->ActiveColliders.remove(this);
+	//ColliderManager::instance->ActiveColliders.remove(this);
 	m_PrevPosition = gameObject->GetPosition();
-	
+	return colData;
 }
 
 void Collider::Draw()
@@ -74,4 +96,14 @@ void Collider::Draw()
 
 }
 
+CollisionData::CollisionData()
+{
+	hit = false;
+	gameObjectHit = nullptr;
+}
 
+CollisionData::CollisionData(bool h, GameObject* go)
+{
+	hit = h; 
+	gameObjectHit = go;
+}

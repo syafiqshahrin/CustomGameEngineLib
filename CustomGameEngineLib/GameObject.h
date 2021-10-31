@@ -1,10 +1,13 @@
 #pragma once
 #include <list>
 #include <iterator>
+#include "Collider.h"
 class Behavior;
 class Input;
 class Matrix4;
-class Collider;
+//struct CollisionData;
+//class Collider;
+
 class GameObject
 {
 private:
@@ -23,6 +26,7 @@ private:
 	void UpdatePosMatrix();
 	Collider* collider;
 	bool colliderEnabled;
+	CollisionData collisionData;
 public:
 
 	Sprite* m_Sprite;
@@ -62,10 +66,29 @@ public:
 
 	void EnableCollider();
 	void DisableCollider();
+	Collider* GetCollider();
+	CollisionData CheckCollision();
 
 	virtual void Update(float deltaTime, Input& inputData);
 	virtual void Draw();
+	template <typename T>
+	T* GetBehavior()
+	{
+		T* behavior = nullptr;
+		if (!attachedBehaviors.empty())
+		{
+			for (it = attachedBehaviors.begin(); it != attachedBehaviors.end(); it++)
+			{
+				if (dynamic_cast<T*>((*it)) != nullptr)
+				{
+					behavior = dynamic_cast<T*>(*it);
+					return behavior;
+				}
 
+			}
+		}
+		return behavior;
+	}
 
 	Matrix4 translateMatrix;
 	Matrix4 rotateMatrix;
